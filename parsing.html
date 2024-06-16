@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/js/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="shortcut icon" href="./assets/image/" type="image/x-icon">
+    <title>HR Masters.</title>
+</head>
+<body class="bg-1 ">
+<div class="blur panelBody">
+    <header>
+        <div class="container menu">
+            <div class="menu-logo">
+                <a href="./index.html"><img src="./assets/image/logo.svg" alt="logo"></a>
+            </div>
+            <div class="menu-links">
+                <div class="menu-link">
+                    <a href="./contacts.html">Контакты</a>
+                </div>
+                
+                <div class="menu-link">
+                    <a href="./howtowork.html">Как это работает?</a>
+                </div>
+                <div class="menu-link">
+                    <a href="./api.html">API</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div>
+                    <div class="nabar-menu-r">
+                        <a href="./index.html" class="navbar-brand"><img src="./assets/image/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mt-4 mb-0">
+                        <li class="nav-item">
+                            <a href="./contacts.html">Контакты</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="./howtowork.html">Как это работает?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./api.html">API</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container panel">
+            <div class="panel-menu">
+                <div class="panel-menu-item">
+                    <a href="./candidates.html"><button><img src="./assets/image/svg/message-text.svg" class="panel-menu-svg" alt="">Кандидаты</button></a>
+                </div>
+                <div class="panel-menu-item-acitive">
+                    <a href="./parsing.html"><button><img src="./assets/image/svg/category.svg" class="panel-menu-svg" alt="">Заявки</button></a>
+                </div>
+               
+            </div>
+            <div class="panel-cont">
+                <div class="panel-cont-header">
+                    <h2>Кандидаты</h2>
+                    
+                </div>
+                <div class="panel-main">
+                    
+                    
+                    <div class="panel-main-table max400 ">
+                        <form action="" method="post">
+                        <table>
+                            <thead class="sticky">
+                                <tr>  
+                                    <th class="br-l"><a href=""></a></th>
+                                    <th>ИМЯ КАНДИДАТА</th>
+                                    <th>РЕЙТИНГ</th>
+                                    <th>СТАТУС</th>
+                                    <th>ДОЛЖНОСТЬ</th>
+                                    <th>ДАТА ПОДАЧИ</th>
+                                    <th>ФАЙЛЫ</th>
+                                    <th class="br-r"></th>
+                                </tr>
+                               
+                            </thead>
+                            <tbody>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="highlightable">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <label>
+                                                <input type="checkbox" id="selected" class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/image/photo/Ellipse 9.svg" alt="">
+                                            <p>Мария Дриллова</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/Group 427318825.svg" alt="">4.0</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>Дизайн тестирование</p>
+                                    </td>
+                                    <td>
+                                        <p>UX/UI Дизайнер</p>
+                                    </td>
+                                    <td>
+                                        <p>25/05/2024</p>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <p class="d-flex align-items-center"><img src="./assets/image/svg/attach_file_black_24dp 1.svg" alt="">3 файла</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <a href="#" id="" onmousedown="viewRed()"><img src="./assets/image/svg/tabler_edit.svg" alt=""></a>
+                                            <a href="#" id="" onmousedown="viewDel()"><img src="./assets/image/svg/ic_round-delete.svg" alt=""></a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        </form>
+                    </div>
+                    <div class="found-candinites">
+                        <div class="found-candinites-header">
+                            <h2>Всего найдено: <span class="purp">2</span> кандидата</h2>
+                        </div>
+                        <div class="found-candinites-serch">
+                            <div class="found-candinites-serch-header">
+                                <h2>Выделен: 1 кандидат ▼</h2>
+                            </div>
+                            <div class="found-candinites-serch-info">
+                                <a href="#">▸ Переместить в принятые</a><br>
+                                <a href="#">▸ Переместить в отклоненные</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="red-cont" id="red">
+        <div class="click" onmousedown="hideRed()"></div>
+            <div class="red">
+                <form action="" method="post">
+                    <div class="red-cand-header">
+                        <h2>Изменить</h2>
+                    </div>
+                    <div class="red-cand-input">
+                        <p>ИМЯ КАНДИДАТА</p>
+                        <input type="text" required placeholder="ФИО">
+                    </div>
+                    <div class="red-cand-input">
+                        <p>ДОЛЖНОСТЬ</p>
+                        <input type="text" required placeholder="UX/UI Дизайнер">
+                    </div>
+                    <div class="red-cand-input">
+                        <p>СТАТУС</p>
+                        <input type="text" required placeholder="Дизайн тестирование">
+                    </div>
+                    <div class="red-cand-date">
+                        <p>ДАТА ПОДАЧИ</p>
+                        <input type="text" id="datepicker" placeholder="Введите дату">
+                    </div>
+                    <div class="red-cand-submit">
+                        <input type="submit" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="del-cont" id="del">
+        <div class="click" onmousedown="hideDel()"></div>
+            <div class="del">
+                <div class="del-header">
+                    <h2>Удалить кандидата?</h2>
+                </div>
+                <div class="del-buttons">
+                    <div class="del-button">
+                        <a href="#"><button>Да</button></a>
+                    </div>
+                    <div class="del-button">
+                        <a href="#"><button>Нет</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<script
+src="https://code.jquery.com/jquery-3.7.1.js"
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./assets/js/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./assets/js/slider.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/checkbox.js"></script>
+</body>
+</html>
